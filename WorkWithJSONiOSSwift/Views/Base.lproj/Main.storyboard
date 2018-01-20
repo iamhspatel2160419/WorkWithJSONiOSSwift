@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NbK-BD-x4z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--DucTran.io-->
+        <scene sceneID="owb-IQ-l22">
+            <objects>
+                <tableViewController id="cHy-ns-on8" customClass="EpisodesTableViewController" customModule="WorkWithJSONiOSSwift" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" id="S1e-5r-n2a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Episode Cell" rowHeight="111" id="vjd-8k-eyp" customClass="EpisodeTableViewCell" customModule="WorkWithJSONiOSSwift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="111"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vjd-8k-eyp" id="guv-s5-e0W">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="57-61: Introduction to 3D Touch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxR-qi-iDq">
+                                            <rect key="frame" x="112" y="16" width="255" height="20"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zK-1I-syO">
+                                            <rect key="frame" x="112" y="40" width="255" height="34"/>
+                                            <string key="text">3D touch is the future of multi-touch! It adds a whole new experience and layer of interaction to your app. In this episode, we are going to learn how to use Peek in 3D touch to display a preview for our app.</string>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                            <color key="textColor" red="0.1176470588" green="0.12549019610000001" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="z21-D1-Gw1">
+                                            <rect key="frame" x="8" y="16" width="96" height="54"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="96" id="M6L-nb-CXC"/>
+                                                <constraint firstAttribute="height" constant="54" id="tVf-ux-jXf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="duc" translatesAutoresizingMaskIntoConstraints="NO" id="5TQ-wd-AP6">
+                                            <rect key="frame" x="112" y="78" width="16" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="16" id="RYJ-XE-k6Z"/>
+                                                <constraint firstAttribute="height" constant="16" id="RhA-RG-ckK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Duc Tran | March 28, 2016" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeN-r8-W99">
+                                            <rect key="frame" x="136" y="78" width="231" height="14"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                                            <color key="textColor" red="0.1176470588" green="0.12549019610000001" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="5TQ-wd-AP6" firstAttribute="top" secondItem="2zK-1I-syO" secondAttribute="bottom" constant="4" id="31B-YA-1Zr"/>
+                                        <constraint firstItem="5TQ-wd-AP6" firstAttribute="leading" secondItem="2zK-1I-syO" secondAttribute="leading" id="CEV-09-pDI"/>
+                                        <constraint firstItem="2zK-1I-syO" firstAttribute="top" secondItem="gxR-qi-iDq" secondAttribute="bottom" constant="8" id="EAJ-1I-nfp"/>
+                                        <constraint firstAttribute="bottom" secondItem="5TQ-wd-AP6" secondAttribute="bottom" constant="16" id="KEA-Ph-Nye"/>
+                                        <constraint firstAttribute="trailing" secondItem="2zK-1I-syO" secondAttribute="trailing" constant="8" id="KO0-Ki-iHc"/>
+                                        <constraint firstItem="AeN-r8-W99" firstAttribute="leading" secondItem="5TQ-wd-AP6" secondAttribute="trailing" constant="8" id="NHZ-GO-kMv"/>
+                                        <constraint firstItem="2zK-1I-syO" firstAttribute="leading" secondItem="z21-D1-Gw1" secondAttribute="trailing" constant="8" id="PK1-cs-5IF"/>
+                                        <constraint firstAttribute="bottom" secondItem="5TQ-wd-AP6" secondAttribute="bottom" constant="55" id="TSe-d3-pun"/>
+                                        <constraint firstAttribute="trailing" secondItem="AeN-r8-W99" secondAttribute="trailing" constant="8" id="VGU-Xg-AZf"/>
+                                        <constraint firstItem="AeN-r8-W99" firstAttribute="top" secondItem="2zK-1I-syO" secondAttribute="bottom" constant="4" id="bAn-0v-LMU"/>
+                                        <constraint firstItem="gxR-qi-iDq" firstAttribute="top" secondItem="guv-s5-e0W" secondAttribute="top" constant="16" id="jCd-B7-HLx"/>
+                                        <constraint firstItem="z21-D1-Gw1" firstAttribute="top" secondItem="guv-s5-e0W" secondAttribute="top" constant="16" id="kmB-Ew-M4k"/>
+                                        <constraint firstItem="AeN-r8-W99" firstAttribute="leading" secondItem="5TQ-wd-AP6" secondAttribute="trailing" constant="8" id="lL7-cx-D1w"/>
+                                        <constraint firstItem="z21-D1-Gw1" firstAttribute="leading" secondItem="guv-s5-e0W" secondAttribute="leading" constant="8" id="qc1-A2-E00"/>
+                                        <constraint firstAttribute="trailing" secondItem="gxR-qi-iDq" secondAttribute="trailing" constant="8" id="qpZ-rC-YK5"/>
+                                        <constraint firstItem="2zK-1I-syO" firstAttribute="top" secondItem="gxR-qi-iDq" secondAttribute="bottom" constant="4" id="ro6-gs-syc"/>
+                                        <constraint firstItem="gxR-qi-iDq" firstAttribute="leading" secondItem="z21-D1-Gw1" secondAttribute="trailing" constant="8" id="yu6-Vd-8al"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="EAJ-1I-nfp"/>
+                                            <exclude reference="TSe-d3-pun"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="authorImageView" destination="5TQ-wd-AP6" id="Gvx-vC-sxm"/>
+                                    <outlet property="createdAtLabel" destination="AeN-r8-W99" id="v1G-WR-bNj"/>
+                                    <outlet property="descriptionLabel" destination="2zK-1I-syO" id="J6l-Ld-xEH"/>
+                                    <outlet property="thumbnailImageView" destination="z21-D1-Gw1" id="n0m-xf-qAr"/>
+                                    <outlet property="titleLabel" destination="gxR-qi-iDq" id="qhj-GK-Z1h"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cHy-ns-on8" id="eon-En-11P"/>
+                            <outlet property="delegate" destination="cHy-ns-on8" id="hJ0-9X-Ja8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="DucTran.io" id="njf-6r-Jt6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="wot-2m-3IM">
+                            <connections>
+                                <action selector="fullBlogDidTap:" destination="cHy-ns-on8" id="lfc-Ju-Fqb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nr-lK-BzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359" y="128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fce-dR-N83">
+            <objects>
+                <navigationController id="NbK-BD-x4z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="bG3-Ka-x0l">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.97254901959999995" green="0.1843137255" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="0.0"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cHy-ns-on8" kind="relationship" relationship="rootViewController" id="fCW-LC-Ehl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7w-Ap-97U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="duc" width="216" height="216"/>
+        <image name="thumbnail" width="640" height="360"/>
+    </resources>
+</document>
